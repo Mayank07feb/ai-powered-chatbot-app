@@ -42,13 +42,98 @@
             "intent": "greeting",
             "domain": "default"
           },
+          "hey": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "good,morn": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "afternoon,good": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "even,good": {
+            "intent": "greeting",
+            "domain": "default"
+          },
           "are,how,you": {
             "intent": "greeting",
+            "domain": "default"
+          },
+          "is,up,what": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "bye": {
+            "intent": "farewell",
+            "domain": "default"
+          },
+          "goodby": {
+            "intent": "farewell",
+            "domain": "default"
+          },
+          "later,see,you": {
+            "intent": "farewell",
+            "domain": "default"
+          },
+          "a,day,good,have": {
+            "intent": "farewell",
+            "domain": "default"
+          },
+          "thank,you": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "thank": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "appreci,it": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "help": {
+            "intent": "help",
+            "domain": "default"
+          },
+          "assist,i,need": {
+            "intent": "help",
+            "domain": "default"
+          },
+          "can,help,me,you": {
+            "intent": "help",
+            "domain": "default"
+          },
+          "are,what,you": {
+            "intent": "bot_identity",
+            "domain": "default"
+          },
+          "a,are,bot,you": {
+            "intent": "bot_identity",
+            "domain": "default"
+          },
+          "are,human,you": {
+            "intent": "bot_identity",
+            "domain": "default"
+          },
+          "gibberish": {
+            "intent": "not_understood",
+            "domain": "default"
+          },
+          "blablabla": {
+            "intent": "not_understood",
             "domain": "default"
           }
         },
         "intentDict": {
-          "greeting": "default"
+          "greeting": "default",
+          "farewell": "default",
+          "thanks": "default",
+          "help": "default",
+          "bot_identity": "default",
+          "not_understood": "default"
         },
         "sentences": [
           {
@@ -63,8 +148,108 @@
           },
           {
             "domain": "default",
+            "utterance": "hey",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good afternoon",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
             "utterance": "how are you",
             "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's up",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "farewell"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "farewell"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you later",
+            "intent": "farewell"
+          },
+          {
+            "domain": "default",
+            "utterance": "have a good day",
+            "intent": "farewell"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank you",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "thanks",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "appreciate it",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "help",
+            "intent": "help"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need assistance",
+            "intent": "help"
+          },
+          {
+            "domain": "default",
+            "utterance": "can you help me",
+            "intent": "help"
+          },
+          {
+            "domain": "default",
+            "utterance": "what are you",
+            "intent": "bot_identity"
+          },
+          {
+            "domain": "default",
+            "utterance": "are you a bot",
+            "intent": "bot_identity"
+          },
+          {
+            "domain": "default",
+            "utterance": "are you human",
+            "intent": "bot_identity"
+          },
+          {
+            "domain": "default",
+            "utterance": "gibberish",
+            "intent": "not_understood"
+          },
+          {
+            "domain": "default",
+            "utterance": "blablabla",
+            "intent": "not_understood"
           }
         ],
         "domains": {
@@ -83,20 +268,99 @@
             "features": {
               "hello": 1,
               "hi": 1,
+              "hey": 1,
+              "good": 1,
+              "morn": 1,
+              "afternoon": 1,
+              "even": 1,
               "how": 1,
               "are": 1,
-              "you": 1
+              "you": 1,
+              "what": 1,
+              "is": 1,
+              "up": 1,
+              "bye": 1,
+              "goodby": 1,
+              "see": 1,
+              "later": 1,
+              "have": 1,
+              "a": 1,
+              "day": 1,
+              "thank": 1,
+              "appreci": 1,
+              "it": 1,
+              "help": 1,
+              "i": 1,
+              "need": 1,
+              "assist": 1,
+              "can": 1,
+              "me": 1,
+              "bot": 1,
+              "human": 1,
+              "gibberish": 1,
+              "blablabla": 1
             },
             "intents": {
-              "greeting": 1
+              "greeting": 1,
+              "farewell": 1,
+              "thanks": 1,
+              "help": 1,
+              "bot_identity": 1,
+              "not_understood": 1
             },
             "intentFeatures": {
               "greeting": {
                 "hello": 1,
                 "hi": 1,
+                "hey": 1,
+                "good": 1,
+                "morn": 1,
+                "afternoon": 1,
+                "even": 1,
                 "how": 1,
                 "are": 1,
-                "you": 1
+                "you": 1,
+                "what": 1,
+                "is": 1,
+                "up": 1
+              },
+              "farewell": {
+                "bye": 1,
+                "goodby": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "have": 1,
+                "a": 1,
+                "good": 1,
+                "day": 1
+              },
+              "thanks": {
+                "thank": 1,
+                "you": 1,
+                "appreci": 1,
+                "it": 1
+              },
+              "help": {
+                "help": 1,
+                "i": 1,
+                "need": 1,
+                "assist": 1,
+                "can": 1,
+                "you": 1,
+                "me": 1
+              },
+              "bot_identity": {
+                "what": 1,
+                "are": 1,
+                "you": 1,
+                "a": 1,
+                "bot": 1,
+                "human": 1
+              },
+              "not_understood": {
+                "gibberish": 1,
+                "blablabla": 1
               }
             },
             "featuresToIntent": {
@@ -106,14 +370,106 @@
               "hi": [
                 "greeting"
               ],
+              "hey": [
+                "greeting"
+              ],
+              "good": [
+                "greeting",
+                "farewell"
+              ],
+              "morn": [
+                "greeting"
+              ],
+              "afternoon": [
+                "greeting"
+              ],
+              "even": [
+                "greeting"
+              ],
               "how": [
                 "greeting"
               ],
               "are": [
-                "greeting"
+                "greeting",
+                "bot_identity"
               ],
               "you": [
+                "greeting",
+                "farewell",
+                "thanks",
+                "help",
+                "bot_identity"
+              ],
+              "what": [
+                "greeting",
+                "bot_identity"
+              ],
+              "is": [
                 "greeting"
+              ],
+              "up": [
+                "greeting"
+              ],
+              "bye": [
+                "farewell"
+              ],
+              "goodby": [
+                "farewell"
+              ],
+              "see": [
+                "farewell"
+              ],
+              "later": [
+                "farewell"
+              ],
+              "have": [
+                "farewell"
+              ],
+              "a": [
+                "farewell",
+                "bot_identity"
+              ],
+              "day": [
+                "farewell"
+              ],
+              "thank": [
+                "thanks"
+              ],
+              "appreci": [
+                "thanks"
+              ],
+              "it": [
+                "thanks"
+              ],
+              "help": [
+                "help"
+              ],
+              "i": [
+                "help"
+              ],
+              "need": [
+                "help"
+              ],
+              "assist": [
+                "help"
+              ],
+              "can": [
+                "help"
+              ],
+              "me": [
+                "help"
+              ],
+              "bot": [
+                "bot_identity"
+              ],
+              "human": [
+                "bot_identity"
+              ],
+              "gibberish": [
+                "not_understood"
+              ],
+              "blablabla": [
+                "not_understood"
               ]
             },
             "neuralNetwork": {
@@ -131,21 +487,262 @@
               "features": [
                 "hello",
                 "hi",
+                "hey",
+                "good",
+                "morn",
+                "afternoon",
+                "even",
                 "how",
                 "are",
-                "you"
+                "you",
+                "what",
+                "is",
+                "up",
+                "bye",
+                "goodby",
+                "see",
+                "later",
+                "have",
+                "a",
+                "day",
+                "thank",
+                "appreci",
+                "it",
+                "help",
+                "i",
+                "need",
+                "assist",
+                "can",
+                "me",
+                "bot",
+                "human",
+                "gibberish",
+                "blablabla"
               ],
               "intents": [
-                "greeting"
+                "greeting",
+                "farewell",
+                "thanks",
+                "help",
+                "bot_identity",
+                "not_understood"
               ],
               "perceptrons": [
                 [
-                  6.512852668762207,
-                  6.566186428070068,
-                  2.2178356647491455,
-                  2.2178356647491455,
-                  2.2178356647491455,
-                  7.657107943110802
+                  9.614075660705566,
+                  9.607815742492676,
+                  9.580191612243652,
+                  6.398080348968506,
+                  3.3126533031463623,
+                  3.306849241256714,
+                  3.2976906299591064,
+                  11.490878105163574,
+                  0.5012811422348022,
+                  -2.6329052448272705,
+                  -2.1049137115478516,
+                  5.810617923736572,
+                  5.810617923736572,
+                  -4.573668956756592,
+                  -4.560937881469727,
+                  -1.344913363456726,
+                  -1.344913363456726,
+                  -3.51621675491333,
+                  -4.018342971801758,
+                  -3.51621675491333,
+                  -4.563514232635498,
+                  -2.3145084381103516,
+                  -2.3145084381103516,
+                  -4.536859512329102,
+                  -1.5368123054504395,
+                  -1.5368123054504395,
+                  -1.5368123054504395,
+                  -0.4829944968223572,
+                  -0.4829944968223572,
+                  -0.431491494178772,
+                  -2.5809478759765625,
+                  -4.462024211883545,
+                  -4.443037986755371,
+                  4.5702337640086546
+                ],
+                [
+                  -2.443225383758545,
+                  -2.4323110580444336,
+                  -2.4209749698638916,
+                  -0.6538751721382141,
+                  -1.8436983823776245,
+                  -1.8391151428222656,
+                  -1.8307726383209229,
+                  -0.07912130653858185,
+                  -3.2071011066436768,
+                  0.15891456604003906,
+                  -1.2036221027374268,
+                  -0.6445611119270325,
+                  -0.6445611119270325,
+                  11.627284049987793,
+                  11.612519264221191,
+                  5.806320667266846,
+                  5.806320667266846,
+                  4.86069917678833,
+                  2.700448751449585,
+                  4.86069917678833,
+                  -2.682182788848877,
+                  -1.2745529413223267,
+                  -1.2745529413223267,
+                  -2.495016574859619,
+                  -0.8495498895645142,
+                  -0.8495498895645142,
+                  -0.8495498895645142,
+                  -0.6745099425315857,
+                  -0.6745099425315857,
+                  -2.1607401371002197,
+                  -0.3641263246536255,
+                  -2.4681785106658936,
+                  -2.458862066268921,
+                  2.5063586210984843
+                ],
+                [
+                  -1.3374853134155273,
+                  -1.3342233896255493,
+                  -1.3307145833969116,
+                  -1.1709895133972168,
+                  -0.3861372172832489,
+                  -0.35460615158081055,
+                  -0.3308131694793701,
+                  -0.4285406768321991,
+                  -2.1358673572540283,
+                  0.5511577725410461,
+                  -0.9003745317459106,
+                  -0.3105604648590088,
+                  -0.3105604648590088,
+                  -1.3245571851730347,
+                  -1.3202637434005737,
+                  -1.2329546213150024,
+                  -1.2329546213150024,
+                  -0.05798991024494171,
+                  -0.532763659954071,
+                  -0.05798991024494171,
+                  12.609213829040527,
+                  6.469336986541748,
+                  6.469336986541748,
+                  -1.53302001953125,
+                  -0.6168057322502136,
+                  -0.6168057322502136,
+                  -0.6168057322502136,
+                  -0.6573996543884277,
+                  -0.6573996543884277,
+                  -0.454721063375473,
+                  -0.6311130523681641,
+                  -1.3437747955322266,
+                  -1.3412508964538574,
+                  1.3486595047033423
+                ],
+                [
+                  -1.2594326734542847,
+                  -1.254669189453125,
+                  -1.249710202217102,
+                  -0.995472252368927,
+                  -0.32353952527046204,
+                  -0.3028029799461365,
+                  -0.288001149892807,
+                  -0.23752881586551666,
+                  -1.5948655605316162,
+                  -1.7449843883514404,
+                  -0.745396077632904,
+                  -0.2726037800312042,
+                  -0.2726037800312042,
+                  -1.2426886558532715,
+                  -1.237131953239441,
+                  -0.6165837049484253,
+                  -0.6165837049484253,
+                  -0.04516100510954857,
+                  -0.4479086101055145,
+                  -0.04516100510954857,
+                  -1.2469534873962402,
+                  -0.6363534927368164,
+                  -0.6363534927368164,
+                  12.486446380615234,
+                  4.326902389526367,
+                  4.326902389526367,
+                  4.326902389526367,
+                  1.1800364255905151,
+                  1.1800364255905151,
+                  -0.35952186584472656,
+                  -0.4101259708404541,
+                  -1.2711553573608398,
+                  -1.2670669555664062,
+                  1.2969136823228955
+                ],
+                [
+                  -0.2460007518529892,
+                  -0.23700223863124847,
+                  -0.2283283770084381,
+                  -0.9389682412147522,
+                  -0.1239883080124855,
+                  -0.11032767593860626,
+                  -0.09719379246234894,
+                  -8.70532512664795,
+                  6.864454746246338,
+                  2.952301025390625,
+                  5.157695293426514,
+                  -2.0711941719055176,
+                  -2.0711941719055176,
+                  -0.09408346563577652,
+                  -0.09032414853572845,
+                  -1.137478232383728,
+                  -1.137478232383728,
+                  -0.52484130859375,
+                  2.4351091384887695,
+                  -0.52484130859375,
+                  -2.0088894367218018,
+                  -0.03075634501874447,
+                  -0.03075634501874447,
+                  -0.7606537938117981,
+                  -0.0279086884111166,
+                  -0.0279086884111166,
+                  -0.0279086884111166,
+                  -0.7212846279144287,
+                  -0.7212846279144287,
+                  2.972707748413086,
+                  5.369044780731201,
+                  -0.2652677893638611,
+                  -0.2555665969848633,
+                  -0.9088617461233778
+                ],
+                [
+                  -2.1078007221221924,
+                  -2.0998587608337402,
+                  -2.091522693634033,
+                  -1.6495561599731445,
+                  -0.5132120847702026,
+                  -0.49677497148513794,
+                  -0.4876609444618225,
+                  -0.3674912452697754,
+                  -0.6120582818984985,
+                  -1.3240909576416016,
+                  -0.7337129712104797,
+                  -0.7015396356582642,
+                  -0.7015396356582642,
+                  -2.0788440704345703,
+                  -2.0692994594573975,
+                  -0.404264360666275,
+                  -0.404264360666275,
+                  -0.1495271772146225,
+                  -0.17763547599315643,
+                  -0.1495271772146225,
+                  -2.0629324913024902,
+                  -1.0594041347503662,
+                  -1.0594041347503662,
+                  -2.047320604324341,
+                  -0.705672562122345,
+                  -0.705672562122345,
+                  -0.705672562122345,
+                  -0.06368470191955566,
+                  -0.06368470191955566,
+                  -0.02157561480998993,
+                  -0.18062393367290497,
+                  11.990180969238281,
+                  11.97354793548584,
+                  2.135929555390287
                 ]
               ]
             }
@@ -165,7 +762,87 @@
       ],
       [
         "en",
+        "hey"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good afternoon"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
         "how are you"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "goodbye"
+      ],
+      [
+        "en",
+        "see you later"
+      ],
+      [
+        "en",
+        "have a good day"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "thanks"
+      ],
+      [
+        "en",
+        "appreciate it"
+      ],
+      [
+        "en",
+        "help"
+      ],
+      [
+        "en",
+        "I need assistance"
+      ],
+      [
+        "en",
+        "can you help me"
+      ],
+      [
+        "en",
+        "what are you"
+      ],
+      [
+        "en",
+        "are you a bot"
+      ],
+      [
+        "en",
+        "are you human"
+      ],
+      [
+        "en",
+        "gibberish"
+      ],
+      [
+        "en",
+        "blablabla"
       ]
     ]
   },
@@ -186,6 +863,55 @@
         "greeting": [
           {
             "answer": "Hello! How can I help you today?"
+          },
+          {
+            "answer": "Hi there! What can I do for you?"
+          },
+          {
+            "answer": "Greetings! How may I assist you?"
+          }
+        ],
+        "farewell": [
+          {
+            "answer": "Goodbye! Have a great day!"
+          },
+          {
+            "answer": "See you later! Take care!"
+          },
+          {
+            "answer": "Farewell! Don't hesitate to come back if you need anything."
+          }
+        ],
+        "thanks": [
+          {
+            "answer": "You're welcome! Is there anything else I can help with?"
+          },
+          {
+            "answer": "My pleasure! Let me know if you need further assistance."
+          }
+        ],
+        "help": [
+          {
+            "answer": "Of course! I'm here to help. What do you need assistance with?"
+          },
+          {
+            "answer": "I'd be glad to help. Could you please specify your question or concern?"
+          }
+        ],
+        "bot_identity": [
+          {
+            "answer": "I'm an AI chatbot designed to assist you with various queries and tasks."
+          },
+          {
+            "answer": "I'm a virtual assistant powered by artificial intelligence. How can I help you today?"
+          }
+        ],
+        "not_understood": [
+          {
+            "answer": "I'm sorry, but I didn't understand that. Could you please rephrase or ask a different question?"
+          },
+          {
+            "answer": "I'm having trouble understanding your input. Can you try asking in a different way?"
           }
         ]
       }
